@@ -1,0 +1,19 @@
+.landing-page {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  background-image: radial-gradient(#8a8fa2, #415a67)
+}
+
+.landing-page__wrapper {
+  text-align: center;
+}
+
+.landing-page__title {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.landing-page__sub-title {
+  font-size: 3rem;
+}
