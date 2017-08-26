@@ -1,0 +1,45 @@
+-
+  var myFullName = 'Marian Zburlea'
+  var myTitle = 'Senior Web Developer'
+  var header = '#about me'
+  var imgPath = 'asset/image/marian-zburlea-avatar.jpg'
+  var slogan = `I translate geek into English and I'm a problem solver driven by challenge. Work is my passion and I focus on innovation and design for the future.`
+  var achievement = {
+    title: 'achievement',
+    content: `I've built a custom SEO CMS that boosted search results position in Google's first places for tens of clients and their websites without any additional effort and minimum or no training.`
+  }
+  var coolStuff = {
+    title: 'grab cool stuff',
+    linkList: [
+      {
+        url: "http://github.com/marianzburlea/my-resume",
+        icon: "github",
+        text: "Click to visit the GitHub project source"
+      }
+      ,{
+        url: "asset/doc/CONTRACTS ONLY - resume Marian Zburlea - one page.docx",
+        icon: "file-word",
+        text: `Click to download the "one page" Microsoft Word version`
+      }
+      ,{
+        url: "asset/doc/CONTRACTS ONLY - resume Marian Zburlea.docx",
+        icon: "file-word",
+        text: `Click to download the "full experience" Microsoft Word version`
+      }
+    ]
+  }
+#about-me
+.about-me
+  .about-me__header=header
+  .about-me__full-name=myFullName
+  .about-me__title=myTitle
+  .about-me__avatar-wrapper
+    img(src=imgPath)
+  p=slogan
+  h2=achievement.title
+  p=achievement.content
+  .about-me__link-list
+    each link in coolStuff.linkList
+      a.about-link(href=link.url)
+        span.about-link-description=link.text
+        span(class=`resume-icon-${link.icon}`)
