@@ -1,0 +1,72 @@
+.award__header {
+  @extend %header;
+  color: var(--color-periwinkle-gray);
+}
+
+.award__card {
+  margin-bottom: 1rem;
+}
+
+
+.award__card-icon {
+  padding: 2.5rem;
+  color: var(--color-white);
+  font-size: 2.5rem;
+}
+
+.award__card-title {
+  font-weight: bold;
+}
+
+.award__card-date,
+.award__card-description,
+.award__card-location,
+.award__card-title {
+  border-top: .1rem solid #415a67;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  min-height: 2rem;
+  // margin-bottom: -0.1rem;
+
+  &:nth-child(1)>.award__card-icon {
+    background-color: var(--color-pelorous);
+  }
+
+  &:nth-child(2)>.award__card-icon {
+    background-color: var(--color-charm);
+  }
+
+  &:nth-child(3)>.award__card-icon {
+    background-color: var(--color-affair);
+  }
+
+  &:nth-child(4)>.award__card-icon {
+    background-color: var(--color-confetti);
+  }
+}
+
+.award__card-date:last-child, 
+.award__card-description:last-child, 
+.award__card-location:last-child, 
+.award__card-title:last-child {
+  border-bottom: .1rem solid #415a67;
+}
+
+.award__item {
+  margin: 0 2rem;
+}
+
+html:not([dir="rtl"]) {
+  .award__item {
+    text-align: left;
+  }
+}
+
+html [dir="rtl"] {
+  .award__item {
+    text-align: right;
+  }
+}

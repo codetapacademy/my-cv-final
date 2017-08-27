@@ -19,7 +19,19 @@
   .award__header=header
   each award in awardList
     .award__card
-      h3.award__card-title=award.title
-      .award__card-description=award.description
-      .award__card-location=award.location
-      .award__card-date=award.date
+      h3.award__card-title
+        span.award__card-icon
+          span.my-cv__icon--trophy
+        .award__item=award.title
+      .award__card-description
+        span.award__card-icon
+          span.my-cv__icon--info
+        .award__item=award.description
+      .award__card-location
+        span.award__card-icon
+          span.my-cv__icon--map2
+        .award__item=award.location
+      .award__card-date
+        span.award__card-icon
+          span.my-cv__icon--calendar
+        .award__item=award.date
