@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(#8a8fa2, #415a67)
+  // background-image: radial-gradient(#8a8fa2, #415a67)
+  background-image: radial-gradient(var(--color-manatee), var(--color-fiord))
 }
 
 .landing-page__wrapper {
@@ -25,7 +26,7 @@
 }
 
 .landing-page__social-label {
-  color: white;
+  color: var(--color-white);
   padding: 0.1rem 0.3rem;
   font-size: 1.8rem;
   cursor: pointer;
@@ -34,7 +35,7 @@
 .landing-page__box-radio,
 .landing-page__box-message {
   display: none;
-  color: white;
+  color: var(--color-white);
 }
 
 #message-default:checked + .landing-page__box-message + .landing-page__box-header {
@@ -65,7 +66,7 @@
 
 .landing-page__box-info,
 .landing-page__box-close {
-  background-color: white;
+  background-color: var(--color-white);
   padding: 0.4rem;
   white-space: nowrap;
   line-height: 1.5rem;
@@ -94,5 +95,5 @@
   text-overflow: ellipsis;
   max-width: 80vmin;
   display: block;
-  color: white;
+  color: var(--color-white);
 }
