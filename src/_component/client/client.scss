@@ -1,0 +1,12 @@
+.client__header {
+  @extend %header;
+  color: var(--color-periwinkle-gray);
+}
+
+.client__image-list {
+  text-align: center;
+}
+
+.client__image {
+  max-width: 70%;
+}
